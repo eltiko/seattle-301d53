@@ -134,23 +134,29 @@ let newObjectN = object =>({ key1: 'value1', key2: 'value2', key3: 'value3'
 console.log(newObjectN); 
 
 
-let sumAndProduct = function(a, b) {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-};
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b; 
+//   return [sum, product];
+// };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
+// // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(sumAndProduct(3, 9));
+// const addOneLiner = (num1, num2) => `${num1} + ${num2} = ${num1 + num2}`;
+let sumAndProduct = (a, b) =>`(${a + b}, ${a * b})`;
+// console.log('Let\'s do some math:', add(4, 5));
+console.log(sumAndProduct(3, 9));
 
+// let message = function(name) {
+//   return `Hello, ${name}!`;
+// };
 
-let message = function(name) {
-  return `Hello, ${name}!`;
-};
-
-// TODO: Uncomment the following line of code to see the output in the browser console
+// // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(message('Allie'));
 
+let message = name => `Hello, ${name}`;
+console.log(message('Allie'));
+// const oneLiner = course => `I cam currently enrolled in ${course}`;
 
 let Student = function(name, age, hometown) {
   this.name = name;
@@ -162,7 +168,7 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
